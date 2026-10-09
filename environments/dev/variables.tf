@@ -63,13 +63,13 @@ variable "user_data" {
 }
 
 variable "associate_public_ip_address" {
-  type        = bool
-  default     = false
+  type    = bool
+  default = false
 }
 
 variable "root_volume_size" {
-  type        = number
-  default     = 8
+  type    = number
+  default = 8
 }
 
 variable "ssh_cidr_blocks" {

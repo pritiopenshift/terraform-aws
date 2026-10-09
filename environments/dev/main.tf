@@ -10,10 +10,10 @@ module "vpc" {
 module "security_group" {
   source = "../../modules/security_group"
 
-  name             = "${var.environment}-ec2-sg"
-  description      = "Security group for ${var.environment} EC2"
-  vpc_id           = module.vpc.vpc_id
-  ssh_cidr_blocks  = var.ssh_cidr_blocks
+  name            = "${var.environment}-ec2-sg"
+  description     = "Security group for ${var.environment} EC2"
+  vpc_id          = module.vpc.vpc_id
+  ssh_cidr_blocks = var.ssh_cidr_blocks
 
   tags = {
     Environment = var.environment
