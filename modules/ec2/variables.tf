@@ -48,7 +48,7 @@ variable "associate_public_ip_address" {
 variable "root_volume_size" {
   type        = number
   description = "Root EBS volume size in GiB"
-  default     = 8
+  default     = 30
 }
 
 variable "tags" {
